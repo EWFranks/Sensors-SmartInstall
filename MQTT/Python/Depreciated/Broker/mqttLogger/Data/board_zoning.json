@@ -1,0 +1,83 @@
+{
+
+    "Boards" : {
+        "G1XE" : {
+
+            "Type" : "Arduino MKR WiFi 1010",
+            "Attachments" : [ "Arduino MKR IoT Carrier" ],
+
+            "Building" : "Rayzor Hall",
+            "Room" : "2015",
+            "Zone" : "Window E16"
+
+        },
+
+        "LEM5" : {
+
+            "Type" : "Arduino MKR WiFi 1010",
+            "Attachments" : [ "Arduino MKR IoT Carrier" ],
+
+            "Building" : "Rayzor Hall",
+            "Room" : "2015",
+            "Zone" : "K16"
+            
+        },
+
+        "6Q58" : {
+
+            "Type" : "Arduino MKR WiFi 1010",
+            "Attachments" : [ "Arduino MKR IoT Carrier" ],
+
+            "Building" : "Rayzor Hall",
+            "Room" : "2015",
+            "Zone" : "K15"
+            
+        },
+
+        "4KLR" : {
+
+            "Type" : "Arduino MKR WiFi 1010",
+            "Attachments" : [ "Arduino MKR IoT Carrier" ],
+
+            "Building" : "Rayzor Hall",
+            "Room" : "2015",
+            "Zone" : "B16"
+            
+        },
+
+        "I5IK" : {
+
+            "Type" : "Arduino MKR WiFi 1010",
+            "Attachments" : [ "Arduino MKR IoT Carrier" ],
+
+            "Building" : "Rayzor Hall",
+            "Room" : "2015",
+            "Zone" : "H16"
+            
+        },
+
+        "27XW" : {
+
+            "Type" : "Arduino MKR WiFi 1010",
+            "Attachments" : [ "Arduino MKR IoT Carrier" ],
+
+            "Building" : "Rayzor Hall",
+            "Room" : "2015",
+            "Zone" : "B11"
+            
+        },
+
+        "N2B4" : {
+
+            "Type" : "Arduino MKR WiFi 1010",
+            "Attachments" : [ "Arduino MKR IoT Carrier" ],
+
+            "Building" : "Rayzor Hall",
+            "Room" : "2015",
+            "Zone" : "K7"
+            
+        }
+
+    }
+
+}

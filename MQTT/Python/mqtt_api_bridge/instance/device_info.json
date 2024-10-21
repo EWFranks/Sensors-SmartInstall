@@ -1,0 +1,238 @@
+{
+    "L4MP" : {
+        "headers" : { "Authorization" : "Bearer c67e5bf7c0e08de5b3f86d221b40a5fe2a15dc97747711d2d36ed492798b7788" },
+
+        "commands" : {
+            
+            "get/state" : {
+                "request_type" : "GET",
+                "request_url" : "https://api.lifx.com/v1/lights/id:d073d5d1717f"
+            },
+
+            "power_on" : {
+                "request_type" : "PUT",
+                "request_url" : "https://api.lifx.com/v1/lights/id:d073d5d1717f/state",
+
+                "request_data" : {
+                    "power" : "on"
+                }
+            },
+
+            "power_off" : {
+                "request_type" : "PUT",
+                "request_url" : "https://api.lifx.com/v1/lights/id:d073d5d1717f/state",
+
+                "request_data" : {
+                    "power" : "off"
+                }
+            },
+
+            "set/color" : {
+                "request_type" : "PUT",
+                "request_url" : "https://api.lifx.com/v1/lights/id:d073d5d1717f/state",
+
+                "request_data" : {
+                    "color" : "",
+                    "duration" : 1
+                }
+            },
+
+            "set/brightness" : {
+                "request_type" : "PUT",
+                "request_url" : "https://api.lifx.com/v1/lights/id:d073d5d1717f/state",
+
+                "request_data" : {
+                    "brightness" : -1,
+                    "duration" : 1
+                }
+
+            }
+        },
+
+
+        "readings" : {
+
+            "reading_interval" : 1000,
+            "allow_normal_repeats" : false,
+            "repeat_heartbeat" : 59000,
+
+            "requests" : [
+
+                {
+                    "request_type" : "GET",
+                    "request_url" : "https://api.lifx.com/v1/lights/id:d073d5d1717f",
+
+                    "request_readings" : [
+                        
+                        {
+                            "reading_type" : "power",
+                            "reading_unit" : "flag",
+                            "request_path" : [0, "power"]
+                        },
+
+                        {
+                            "reading_type" : "hue",
+                            "reading_unit" : "hue",
+                            "request_path" : [0, "color", "hue"]
+                        },
+
+                        {
+                            "reading_type" : "saturation",
+                            "reading_unit" : "percent",
+                            "request_path" : [0, "color", "saturation"]
+                        },
+                        
+                        {
+                            "reading_type" : "kelvin",
+                            "reading_unit" : "kelvin",
+                            "request_path" : [0, "color", "kelvin"]
+                        },
+                        
+                        {
+                            "reading_type" : "brightness",
+                            "reading_unit" : "percent_decimal",
+                            "request_path" : [0, "brightness"]
+                        }
+                    
+                    ] 
+                }
+            ]
+        }
+        
+    },
+
+
+    "N1TE" : {
+        "headers" : { "Authorization" : "Bearer c67e5bf7c0e08de5b3f86d221b40a5fe2a15dc97747711d2d36ed492798b7788" },
+
+        "commands" : {
+            
+            "get/state" : {
+                "request_type" : "GET",
+                "request_url" : "https://api.lifx.com/v1/lights/id:d073d5d195cf"
+            },
+
+            "power_on" : {
+                "request_type" : "PUT",
+                "request_url" : "https://api.lifx.com/v1/lights/id:d073d5d195cf/state",
+
+                "request_data" : {
+                    "power" : "on"
+                }
+            },
+
+            "power_off" : {
+                "request_type" : "PUT",
+                "request_url" : "https://api.lifx.com/v1/lights/id:d073d5d195cf/state",
+
+                "request_data" : {
+                    "power" : "off"
+                }
+            },
+
+            "set/color" : {
+                "request_type" : "PUT",
+                "request_url" : "https://api.lifx.com/v1/lights/id:d073d5d195cf/state",
+
+                "request_data" : {
+                    "color" : "",
+                    "duration" : 1
+                }
+            },
+
+            "set/brightness" : {
+                "request_type" : "PUT",
+                "request_url" : "https://api.lifx.com/v1/lights/id:d073d5d195cf/state",
+
+                "request_data" : {
+                    "brightness" : -1,
+                    "duration" : 1
+                }
+
+            }
+        },
+
+
+        "readings" : {
+
+            "reading_interval" : 1000,
+            "allow_normal_repeats" : false,
+            "repeat_heartbeat" : 59000,
+
+            "requests" : [
+
+                {
+                    "request_type" : "GET",
+                    "request_url" : "https://api.lifx.com/v1/lights/id:d073d5d195cf",
+
+                    "request_readings" : [
+                        
+                        {
+                            "reading_type" : "power",
+                            "reading_unit" : "flag",
+                            "request_path" : [0, "power"]
+                        },
+
+                        {
+                            "reading_type" : "hue",
+                            "reading_unit" : "hue",
+                            "request_path" : [0, "color", "hue"]
+                        },
+
+                        {
+                            "reading_type" : "saturation",
+                            "reading_unit" : "percent",
+                            "request_path" : [0, "color", "saturation"]
+                        },
+                        
+                        {
+                            "reading_type" : "kelvin",
+                            "reading_unit" : "kelvin",
+                            "request_path" : [0, "color", "kelvin"]
+                        },
+                        
+                        {
+                            "reading_type" : "brightness",
+                            "reading_unit" : "percent_decimal",
+                            "request_path" : [0, "brightness"]
+                        }
+                    
+                    ] 
+                }
+            ]
+        }
+        
+    },
+
+
+
+    "Z0R0" : {
+
+        "headers" : {},
+
+        "commands" : {},
+        "readings" : {
+            "reading_interval" : 1000,
+            "allow_normal_repeats" : false,
+            "repeat_heartbeat" : 59000,
+            "requests" : [
+                {
+                    "request_type" : "GET",
+                    "request_url" : "https://app.safespace.io/api/raw-data/live-occupancy/2a9b3336",
+                    "request_readings" : [
+                        {
+                            "reading_type" : "occupancy",
+                            "reading_unit" : "people",
+                            "request_path" : []
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+
+
+
+
+
+}

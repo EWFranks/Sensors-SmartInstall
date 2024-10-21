@@ -1,0 +1,6 @@
+docker build -t occupancy_mqtt .
+docker run -v D:\Files\Github\ERDC_Repositories\Sensors-SmartInstall\MQTT\occupancy_mqtt\docker_volume:/app/instance occupancy_mqtt
+
+- or -
+
+docker run --restart=always -v /home/user/docker_volumes/occupancy_mqtt:/app/instance occupancy_mqtt

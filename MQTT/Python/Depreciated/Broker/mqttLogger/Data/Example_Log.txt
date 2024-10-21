@@ -1,0 +1,75 @@
+{
+    'zone': {
+        'readings': [
+            {
+                'reading_type': 'temperature', 
+                'reading_unit': 'celsius', 
+                'reading_val': 35.23, 
+                'reading_time': '2023-08-01T14:48:02.551760-0500', 
+                'reading_val_type': 'number', 
+                'hardware_info': {
+                    'sensor_id': '3WBK'
+                }
+            }, 
+            {
+                'reading_type': 'humidity',
+                'reading_unit': 'percent',
+                'reading_val': 30.0,
+                'reading_time': '2023-08-01T14:48:02.551760-0500',
+                'reading_val_type': 'number',
+                'hardware_info': {
+                    'sensor_id': '3WBK'
+                }
+            },
+            {
+                'reading_type': 'pressure',
+                'reading_unit': 'hectopascal', 
+                'reading_val': 98.0, 
+                'reading_time': '2023-08-01T14:48:02.551760-0500', 
+                'reading_val_type': 'number', 
+                'hardware_info': {
+                    'sensor_id': '3WBK'
+                }
+            }, 
+            {
+                'reading_type': 'IAQ',
+                'reading_unit': 'IAQ', 
+                'reading_val': 12946860.0, 
+                'reading_time': '2023-08-01T14:48:02.551760-0500', 
+                'reading_val_type': 'number', 
+                'hardware_info': {
+                    'sensor_id': '3WBK'
+                    }
+                },
+                {
+                    'reading_type': 'VOC',
+                    'reading_unit': 'VOC',
+                    'reading_val': 0.5,
+                    'reading_time': '2023-08-01T14:48:02.551760-0500',
+                    'reading_val_type': 'number', 'hardware_info': 
+                    'sensor_id': '3WBK'
+                }
+            }, 
+            {
+                'reading_type': 'CO2',
+                'reading_unit': 'CO2',
+                'reading_val': 500.0,
+                'reading_time': '2023-08-01T14:48:02.551760-0500',
+                'reading_val_type': 'number',
+                'hardware_info': {
+                    'sensor_id': '3WBK'
+                }
+            }, 
+            {
+                'reading_type': 'acceleration',
+                'reading_unit': 'delta',
+                'reading_val': '0.28_0.30_0.94',
+                'reading_time': '2023-08-01T14:48:02.551760-0500',
+                'reading_val_type':'string', 
+                'hardware_info': {
+                    'sensor_id': '3WBK'
+                }
+            }
+        ]
+    }
+}
