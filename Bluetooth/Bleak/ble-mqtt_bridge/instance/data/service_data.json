@@ -1,0 +1,94 @@
+
+{
+
+    "19b10010-e8f2-537e-4f6c-d104768a1214" : {
+
+        "name" : "ledGestureService",
+        "characteristics" : {
+
+            "19b10011-e8f2-537e-4f6c-d104768a1214" : {
+                "reading_val_type" : "led",
+                "reading_unit" : "boolean",
+                "enabled" : false
+            },
+
+            "19b10012-e8f2-537e-4f6c-d104768a1214" : {
+                "reading_val_type" : "gesture",
+                "reading_unit" : "text",
+                "enabled" : true
+            }
+
+        }
+    },
+
+    "19b10000-0000-537e-4f6c-d104768a1214" : {
+        
+        "name" : "niclaService",
+        "characteristics" : {
+
+            "19b10000-1001-537e-4f6c-d104768a1214" : {
+                "reading_val_type" : "version",
+                "reading_unit" : "number",
+                "enabled" : false
+            },
+
+            "19b10000-2001-537e-4f6c-d104768a1214" : {
+                "reading_val_type" : "temperature",
+                "reading_unit" : "celsius",
+                "enabled" : true
+            },
+            
+            "19b10000-3001-537e-4f6c-d104768a1214" : {
+                "reading_val_type" : "humidity",
+                "reading_unit" : "percent",
+                "enabled" : true
+            },
+
+            "19b10000-4001-537e-4f6c-d104768a1214" : {
+                "reading_val_type" : "pressure",
+                "reading_unit" : "hPa",
+                "enabled" : true
+            },
+
+            "19b10000-5001-537e-4f6c-d104768a1214" : {
+                "reading_val_type" : "accelerometer",
+                "reading_unit" : "m/s2",
+                "enabled" : true
+            },
+
+            "19b10000-6001-537e-4f6c-d104768a1214" : {
+                "reading_val_type" : "gyroscope",
+                "reading_unit" : "dps",
+                "enabled" : true
+            },
+
+            "19b10000-7001-537e-4f6c-d104768a1214" : {
+                "reading_val_type" : "quaternion",
+                "reading_unit" : "quaternion",
+                "enabled" : true
+            },
+
+            "19b10000-9001-537e-4f6c-d104768a1214" : {
+                "reading_val_type" : "bsec",
+                "reading_unit" : "bsec",
+                "enabled" : true
+            },
+
+            "19b10000-9002-537e-4f6c-d104768a1214" : {
+                "reading_val_type" : "co2",
+                "reading_unit" : "ppm",
+                "enabled" : true
+            },
+
+            "19b10000-9003-537e-4f6c-d104768a1214" : {
+                "reading_val_type" : "gas",
+                "reading_unit" : "ohm",
+                "enabled" : true
+            }
+
+        }
+
+    }
+
+
+}

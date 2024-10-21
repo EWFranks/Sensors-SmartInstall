@@ -1,0 +1,20 @@
+version: '0.1'
+name: 'sensors-ble_aggregator'
+
+services:
+
+  ble-bridge:
+    container_name: sensors-ble_aggregator
+    build:
+      context: .
+    
+    volumes:
+      - type: bind
+        source: /home/user/docker_volumes/ble-mqtt_bridge
+        target: /app/instance/
+    
+      - type: bind
+        source: /var/run/dbus/
+        
+
+    restart: always
