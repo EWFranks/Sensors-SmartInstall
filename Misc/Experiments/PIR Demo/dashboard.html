@@ -1,0 +1,22 @@
+//HTML dashboard
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Blueprint Dashboard</title>
+</head>
+<body>
+    <h1>Room Blueprint with Motion Detection Zones</h1>
+    <canvas id="blueprintCanvas" width="{{ room_width * 50 }}" height="{{ room_height * 50 }}" style="border:1px solid black;"></canvas>
+
+    <script>
+        var roomWidth = {{ room_width }};
+        var roomHeight = {{ room_height }};
+        var motionZones = {{ motion_zones|tojson }};
+
+        // Your JavaScript code to draw the blueprint grid and motion detection zones
+        // ...
+
+    </script>
+</body>
+</html>
