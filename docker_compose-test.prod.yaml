@@ -1,0 +1,49 @@
+version: '0.1'
+name: 'sensors-data_manager'
+
+services:
+
+  sensors-api:
+    container_name: sensors-flask_app
+    build:
+      context: ./SensorsAPI-SmartInstall
+
+    command: gunicorn data_manager:app -w 1 --threads 2 --bind 0.0.0.0:2020
+
+    volumes:
+      - type: bind
+        source: D:\Files\Github\Sensors_Workplace\docker_volumes\sensors-api_instance
+        target: /app/instance/
+
+    ports:
+      - "2020:2020"
+    
+    restart: always
+
+  api-mqtt:
+    container_name: sensors-api_mqtt
+    build:
+      context: ./Sensors-SmartInstall/MQTT/Python/mqtt_api_bridge
+    
+    volumes:
+      - type: bind
+        source: D:\Files\Github\Sensors_Workplace\docker_volumes\mqtt_api_bridge
+        target: /app/instance/
+
+    restart: always
+
+  
+  mqtt-broker:
+    container_name: sensors-mqtt_broker
+    image: eclipse-mosquitto:latest
+
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+
+    volumes:
+      - type: bind
+        source: D:\Files\Github\Sensors_Workplace\docker_volumes\mosquitto\mosquitto.conf
+        target: /mosquitto/config/mosquitto.conf
+
+    restart: always
