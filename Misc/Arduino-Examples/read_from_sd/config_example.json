@@ -1,0 +1,16 @@
+{
+
+  "device_id" : "AAAA",
+  "mqtt_ip" : "10.0.53.162",
+  "mqtt_port" : 1883,
+
+  "server_ip" : "10.0.53.162",
+  "server_port" : 2020,
+  "update_file" : "MkrMqttPublisher.bin",
+
+  "carrier_enabled" : true,
+  "pir_pin" : 0,
+  "irrelevant_field" : true
+
+
+}
