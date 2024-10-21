@@ -1,0 +1,29 @@
+#define trigPin 5
+#define echoPin 6
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+}
+
+void loop() {
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  long duration = pulseIn(echoPin, HIGH);
+  int distance = duration * 0.0343 / 2;
+
+  if (distance <= 600) {
+    Serial.print("Distance: ");
+    Serial.print(distance);
+    Serial.println(" cm");
+  } else {
+    Serial.println("Nothing Detected");
+  }
+  
+  delay(1000);  // Wait for a moment before the next measurement
+}
